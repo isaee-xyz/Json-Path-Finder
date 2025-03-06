@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Pathfinder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>JSON Pathfinder</h1>
+      <div class="actions">
+        <button id="formatBtn" title="Format JSON">Format</button>
+        <button id="clearBtn" title="Clear">Clear</button>
+      </div>
+    </div>
+    
+    <div class="main-content">
+      <div class="input-section">
+        <div class="json-status-container">
+          <textarea id="jsonInput" placeholder="Paste your JSON here..."></textarea>
+          <div class="json-status">
+            <div id="validIndicator" class="status-indicator valid-json hidden">
+              <span class="status-icon">✓</span>
+              <span class="status-text">Valid JSON</span>
+            </div>
+            <div id="invalidIndicator" class="status-indicator invalid-json hidden">
+              <span class="status-icon">✗</span>
+              <span class="status-text">Invalid JSON</span>
+            </div>
+          </div>
+        </div>
+        <div id="errorMessage" class="error"></div>
+        <div id="suggestion" class="suggestion"></div>
+      </div>
+      
+      <div class="output-section">
+        <div class="path-display">
+          <div class="path-label">Path:</div>
+          <div id="jsonPath" class="path-value"></div>
+          <button id="copyPathBtn" title="Copy path to clipboard">Copy</button>
+        </div>
+        
+        <div class="json-explorer" id="jsonExplorer"></div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="path-format">
+        <label for="pathFormat">Path format:</label>
+        <select id="pathFormat">
+          <option value="dot">Dot notation (obj.prop)</option>
+          <option value="bracket">Bracket notation (obj['prop'])</option>
+        </select>
+      </div>
+      <div class="info">Click on any JSON property to see its path</div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
