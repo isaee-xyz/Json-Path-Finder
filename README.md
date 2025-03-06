@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://chrome.google.com/webstore/detail/json-pathfinder/[extension-id]">
+  <a href="https://chrome.google.com/webstore/detail/json-pathfinder/kdmichfapgdfnjgdjedfgnoljldclpoe">
     <img src="https://img.shields.io/badge/Chrome-Extension-blue.svg" alt="Chrome Extension">
   </a>
   <img src="https://img.shields.io/badge/Version-1.0.0-green.svg" alt="Version 1.0.0">
